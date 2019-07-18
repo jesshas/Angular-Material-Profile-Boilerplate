@@ -1,0 +1,78 @@
+.card.card-cascade .view.gradient-card-header {
+    padding: 1rem 1rem;
+    text-align: center;
+}
+
+.card.card-cascade h3,
+.card.card-cascade h4,
+{
+    margin-bottom: 0px;
+}
+
+.blue-gradient {
+    background: -webkit-linear-gradient(50deg, #45cafc, #303f9f);
+    background: linear-gradient(40deg, #45cafc, #4285f4);
+}
+
+.font-bold {
+    font-weight: 600;
+}
+
+.card.card-cascade {
+    .view {
+        box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.15), 0 3px 12px 0 rgba(0, 0, 0, 0.15);
+    }
+}
+
+.icon-bar i {
+    width: 20%; /* Set a specific width */
+    padding: 5px;
+
+}
+
+/* PULSE */
+
+@-webkit-keyframes pulse {
+    0% {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  
+    50% {
+      -webkit-transform: scale(0.8);
+      transform: scale(0.8);
+    }
+  
+    100% {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  
+    50% {
+      -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+      transform: scale(0.8);
+    }
+  
+    100% {
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  }
+  
+  .faa-pulse.animated,
+  .faa-pulse.animated-hover:hover,
+  .faa-parent.animated-hover:hover > .faa-pulse {
+    -webkit-animation: pulse 2s linear infinite;
+    animation: pulse 2s linear infinite;
+  }
+  
