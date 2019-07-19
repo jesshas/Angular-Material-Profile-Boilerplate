@@ -11,7 +11,8 @@ const transporter = nodemailer.createTransport({
   port: 465,
   secure: true,
   auth: {
-    user: 'jessicahastings77@gmail.com'
+    user: 'youremail@example.com',
+    pass: 'password'
   },
   tls: {
   rejectUnauthorized: false
@@ -35,7 +36,7 @@ app.post('/send', function (req, res) {
   let copyToSender = req.body.contactFormCopy;
 
   let mailOptions = {
-    to: ['jessicahastings77@gmail.com'], 
+    to: ['youremail@example.com'], 
     from: senderName,
     text: messageText,
     replyTo: senderEmail
