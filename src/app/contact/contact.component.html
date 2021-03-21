@@ -11,26 +11,26 @@
     <form class="text-center" style="color: #757575;" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
 
       <div class="md-form mt-3">
-        <input type="text" formControlName="contactFormName" id="materialContactFormName" class="form-control"
+        <input type="text" formControlName="contactFormName" id="contact" aria-required="true" class="form-control"
           mdbInput>
-        <label for="materialContactFormName">Name</label>
+        <label for="contact">Name</label>
       </div>
 
       <div class="md-form">
-        <input type="email" formControlName="contactFormEmail" id="materialContactFormEmail" class="form-control"
+        <input type="email" formControlName="contactFormEmail" id="materialContactFormEmail" aria-required="true" class="form-control"
           mdbInput>
         <label for="materialContactFormEmail">E-mail</label>
       </div>
 
       <div class="md-form">
-        <textarea type="text" formControlName="contactFormMessage" id="materialContactFormMessage" class="form-control md-textarea"
+        <textarea type="text" formControlName="contactFormMessage" id="materialContactFormMessage" aria-required="true" class="form-control md-textarea"
           mdbInput></textarea>
         <label for="materialContactFormMessage">Message</label>
       </div>
 
       <div class="row">
         <div class="col-md-6 mx-auto d-flex justify-content-center">
-          <mdb-checkbox formControlName="contactFormCopy">Send me a copy of this message</mdb-checkbox>
+          <mdb-checkbox formControlName="contactFormCopy" name="messageCopy">Send me a copy of this message</mdb-checkbox>
         </div>
       </div>
 
